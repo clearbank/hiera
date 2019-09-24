@@ -7,9 +7,9 @@ require (
 	github.com/Azure/go-autorest/autorest/azure/auth v0.1.0 // indirect
 	github.com/Azure/go-autorest/autorest/to v0.2.0 // indirect
 	github.com/Azure/go-autorest/autorest/validation v0.1.0 // indirect
-	github.com/bmatcuk/doublestar v1.1.1
+	github.com/bmatcuk/doublestar v1.1.5
 	github.com/hashicorp/go-hclog v0.9.0
-	github.com/hashicorp/terraform v0.12.6
+	github.com/hashicorp/terraform v0.12.9
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/labstack/gommon v0.2.9 // indirect
 	github.com/lyraproj/issue v0.0.0-20190606092846-e082d6813d15
@@ -25,3 +25,5 @@ replace (
 	github.com/coreos/etcd => github.com/coreos/etcd v3.3.13+incompatible
 	github.com/ugorji/go => github.com/ugorji/go v0.0.0-20181204163529-d75b2dcb6bc8
 )
+
+go 1.13
