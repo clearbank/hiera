@@ -73,10 +73,12 @@ func TerraformBackendData(_ hieraapi.ProviderContext, options map[string]px.Valu
 		panic(err)
 	}
 	remoteState := state.State()
-	mod := remoteState.RootModule()
 	output := make(map[string]interface{})
-	for k, os := range mod.OutputValues {
-		output[k] = hcl2shim.ConfigValueFromHCL2(os.Value)
+	if !remoteState.Empty() {
+		mod := remoteState.RootModule()
+		for k, os := range mod.OutputValues {
+			output[k] = hcl2shim.ConfigValueFromHCL2(os.Value)
+		}
 	}
 	hsh := px.Wrap(nil, output)
 	return hsh.(px.OrderedMap)
