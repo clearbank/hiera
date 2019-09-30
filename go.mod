@@ -17,7 +17,7 @@ require (
 	github.com/spf13/cobra v0.0.4
 	github.com/stretchr/testify v1.3.0
 	github.com/zclconf/go-cty v1.0.1-0.20190708163926-19588f92a98f
-	gopkg.in/yaml.v3 v3.0.0-20190502103701-55513cacd4ae
+	gopkg.in/yaml.v3 v3.0.0-20190924164351-c8b7dadae555
 )
 
 replace (
